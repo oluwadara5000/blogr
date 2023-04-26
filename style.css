@@ -1,49 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 
 /* font-family: 'Overpass', sans-serif; */
 /* font-family: 'Ubuntu', sans-serif; */
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
-.testing{
+.testing {
   width: 100%;
   height: 500px;
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto auto;
 }
 
-html, body{
+html,
+body {
   width: 100%;
   height: 100vh;
   background-color: #000000;
 }
 
-section{
+section {
   width: 1440px;
   background-color: #ffffff;
   margin: auto;
 }
 
-.hero{
+.hero {
   position: relative;
   width: 100%;
   height: 600px;
-  background-image: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  background-image: linear-gradient(
+    to right,
+    hsl(13, 100%, 72%),
+    hsl(353, 100%, 62%)
+  );
   border-bottom-left-radius: 90px;
   z-index: 200;
+  margin-bottom: 160px;
 }
 
-.hero-background{
+.hero-background {
   position: absolute;
   width: 100%;
   height: 100%;
-   background-image: url(images/bg-pattern-intro-desktop.svg);
+  background-image: url(images/bg-pattern-intro-desktop.svg);
   background-size: 200%;
   background-repeat: no-repeat;
   background-position-x: 20%;
@@ -51,136 +57,155 @@ section{
   z-index: -1;
 }
 
-header{
+header {
   padding: 0 165px;
   padding-top: 60px;
   display: flex;
   justify-content: space-between;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   align-items: center;
   margin-bottom: 135px;
 }
 
-.left-header-container{
+.left-header-container {
   display: flex;
   gap: 60px;
   align-items: center;
 }
 
-.navigation-list{
+.navigation-list {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-.navigation-list div{
+.navigation-list div {
   display: flex;
   align-items: center;
   gap: 8px;
   color: #ffffff;
 }
 
-.navigation-list div i{
+.navigation-list div i {
   font-size: 10px;
 }
 
-.right-header-container{
+.right-header-container {
   display: flex;
   gap: 35px;
 }
 
-
-.right-header-container button{
+.right-header-container button {
   background-color: #ffffff;
   padding: 15px 41px;
   color: hsl(356, 100%, 66%);
   font-weight: 600;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   border: none;
   border-radius: 20px;
   font-size: 15px;
 }
 
-#login{
+#login {
   background-color: transparent;
   color: #ffffff;
   padding: 0;
 }
 
-.hero-writeup{
+.hero-writeup {
   text-align: center;
-  font-family: 'Overpass', sans-serif;
+  font-family: "Overpass", sans-serif;
   color: #ffffff;
 }
 
-.hero-writeup h1{
+.hero-writeup h1 {
   font-size: 62px;
   font-weight: 300;
   margin-bottom: 25px;
 }
 
-.hero-writeup p{
-font-weight: 300;
-font-size: 18px;
-letter-spacing: 1px;
-margin-bottom: 50px;
+.hero-writeup p {
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
 }
 
-.hero-buttons{
+.hero-buttons {
   display: flex;
   gap: 15px;
   justify-content: center;
 }
 
-.hero-buttons button{
+.hero-buttons button {
   background-color: #ffffff;
   padding: 16px 19px;
   color: hsl(356, 100%, 66%);
   font-weight: 600;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   border: none;
   border-radius: 25px;
   font-size: 15px;
 }
 
-#learn-more{
+#learn-more {
   background-color: transparent;
   border: 1px solid #ffffff;
   color: #ffffff;
 }
 
-
-
-.one{
-background-color: hsl(356, 100%, 66%);
+.second-div {
+  width: 100%;
+  position: relative;
+  /* height: 880px; */
+  z-index: 10000;
 }
 
-.two{
-background-color: hsl(355, 100%, 74%);
+.second-div-background {
+  width: 100%;
+  height: 100%;
+  background-image: url(images/bg-pattern-circles.svg);
+  position: absolute;
 }
 
-.three{
-background-color: hsl(208, 49%, 24%);
+/* TRY TO PUT THE BACKGROUNDS OUTSIDE THEIR CURRENT PARENTS AND IN THE SECTION CONTAINER */
+
+.one {
+  background-color: hsl(356, 100%, 66%);
 }
 
-.four{
-background-color: hsl(240, 2%, 79%);
+.two {
+  background-color: hsl(355, 100%, 74%);
 }
 
-.five{
-background-color: hsl(207, 13%, 34%);
+.three {
+  background-color: hsl(208, 49%, 24%);
 }
 
-.six{
-background-color: hsl(240, 10%, 16%);
+.four {
+  background-color: hsl(240, 2%, 79%);
 }
 
-.seven{
-background-image: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+.five {
+  background-color: hsl(207, 13%, 34%);
 }
 
-.eight{
-background-image: linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%)
-);
+.six {
+  background-color: hsl(240, 10%, 16%);
 }
 
+.seven {
+  background-image: linear-gradient(
+    to right,
+    hsl(13, 100%, 72%),
+    hsl(353, 100%, 62%)
+  );
+}
+
+.eight {
+  background-image: linear-gradient(
+    to right,
+    hsl(237, 17%, 21%),
+    hsl(237, 23%, 32%)
+  );
+}
