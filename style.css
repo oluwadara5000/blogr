@@ -29,6 +29,7 @@ section {
   width: 1440px;
   background-color: #ffffff;
   margin: auto;
+  position: relative;
 }
 
 .hero {
@@ -156,8 +157,6 @@ header {
 
 .second-div {
   width: 100%;
-  position: relative;
-  /* height: 880px; */
   z-index: 10000;
 }
 
@@ -165,10 +164,12 @@ header {
   width: 100%;
   height: 100%;
   background-image: url(images/bg-pattern-circles.svg);
+  background-repeat: no-repeat;
   position: absolute;
+  background-size: 61%;
 }
 
-/* TRY TO PUT THE BACKGROUNDS OUTSIDE THEIR CURRENT PARENTS AND IN THE SECTION CONTAINER */
+/* TRYING TO POSITION THE SECOND DIV BACKGROUND PROPERLY */
 
 .one {
   background-color: hsl(356, 100%, 66%);
