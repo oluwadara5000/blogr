@@ -9,6 +9,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  cursor: pointer;
 }
 
 .testing {
@@ -30,6 +31,7 @@ section {
   background-color: #ffffff;
   margin: auto;
   position: relative;
+  overflow: hidden;
 }
 
 .hero {
@@ -89,6 +91,17 @@ header {
 
 .navigation-list div i {
   font-size: 10px;
+}
+
+.navigation-list div p{
+color: hsl(240, 2%, 79%);
+font-family: 'Ubuntu', sans-serif;
+font-weight: 700;
+}
+
+.navigation-list div p:hover{
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .right-header-container {
@@ -155,21 +168,216 @@ header {
   color: #ffffff;
 }
 
+#signup:hover, #start-for-free:hover{
+  background-color: hsl(355, 100%, 74%);
+  color: #ffffff;
+}
+
+#learn-more:hover{
+  background-color: #ffffff;
+  color: hsl(355, 100%, 74%);
+}
+
 .second-div {
   width: 100%;
   z-index: 10000;
+  margin-bottom: 265px;
 }
 
 .second-div-background {
   width: 100%;
   height: 100%;
-  background-image: url(images/bg-pattern-circles.svg);
+  background-image: url(images/illustration-editor-desktop.svg);
   background-repeat: no-repeat;
   position: absolute;
   background-size: 61%;
+  top: 20%;
+  left: 56%;
 }
 
-/* TRYING TO POSITION THE SECOND DIV BACKGROUND PROPERLY */
+.second-div > h1{
+  color: hsl(208, 49%, 24%);
+  text-align: center;
+  font-family: "Overpass", sans-serif;
+  font-size: 40px;
+  font-weight: lighter;
+  margin-bottom: 120px;
+}
+
+.second-div-writeup{
+  margin-left: 165px;
+  display: flex;
+  flex-direction: column;
+  gap: 85px;
+  width: 530px;
+}
+
+.second-div-writeup div{
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.second-div-writeup h1{
+  color: hsl(208, 49%, 24%);
+  font-family: "Overpass", sans-serif;
+  font-size: 30px;
+}
+
+.second-div-writeup p{
+  color: hsl(207, 13%, 34%);
+  font-family: "Overpass", sans-serif;
+  line-height: 25px;
+  font-size: 17px;
+}
+
+.third-div-background{
+  background-image: url(images/bg-pattern-circles.svg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 70%;
+  left: -15%;
+  z-index: 1;
+  top: -55%;
+}
+
+.third-div{
+  position: relative;
+  height: 880px;
+  overflow: hidden;
+}
+
+.third-div-image{
+  position: absolute;
+  z-index: 10;
+  height: 500px;
+}
+
+.third-div-writeup{
+  margin-left: auto;
+  overflow: hidden;
+  padding: 110px 0;
+  padding-right: 165px;
+  background-image: linear-gradient(
+    to right,
+    hsl(237, 17%, 21%),
+    hsl(237, 23%, 32%)
+  );
+  border-bottom-left-radius: 90px;
+  border-top-right-radius: 90px;
+}
+
+.third-div-writeup h1{
+  color: #ffffff;
+  font-family: "Overpass", sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 35px;
+  width: 560px;
+  margin-left: auto;
+  /* padding-right: 165px; */
+}
+
+.third-div-writeup p{
+  color: hsl(240, 2%, 79%);
+  font-family: "Overpass", sans-serif;
+  line-height: 25px;
+  font-size: 18px;
+  width: 560px;
+  margin-left: auto;
+}
+
+.third-div-image{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 100px;
+  top: 46%;
+  z-index: 100000;
+}
+
+.fourth-div{
+  margin-top: -365px;
+}
+
+.fourth-div-writeup-container{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-left: -19%;
+  gap: 125px;
+}
+
+.fourth-div-writeup{
+  display: flex;
+  flex-direction: column;
+  gap: 85px;
+}
+
+.fourth-div-writeup div{
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  padding-right: 120px;
+}
+
+.fourth-div-writeup h1{
+  color: hsl(208, 49%, 24%);
+  font-family: "Overpass", sans-serif;
+  font-size: 30px;
+}
+
+.fourth-div-writeup p{
+  color: hsl(207, 13%, 34%);
+  font-family: "Overpass", sans-serif;
+  line-height: 25px;
+}
+
+footer{
+  background-color: hsl(240, 10%, 16%);
+  display: flex;
+  color: hsl(240, 2%, 79%);
+  padding: 70px 165px;
+  gap: 185px;
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 125px;
+}
+
+.footer-list{
+  display: flex;
+  gap: 210px;
+}
+
+.footer-list h1{
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.footer-list h1:hover{
+  text-decoration: underline;
+  color: red;
+}
+
+.footer-list ul{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-list ul li{
+  list-style-type: none;
+}
+
+.footer-list ul:hover{
+  text-decoration: underline;
+  color: red;
+}
+
+/* FINISHED THE WHOLE THING. TIME FOR MEDIA QUERIES */
 
 .one {
   background-color: hsl(356, 100%, 66%);
