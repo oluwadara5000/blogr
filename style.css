@@ -60,6 +60,10 @@ section {
   z-index: -1;
 }
 
+.navigation-bar-div {
+  display: none;
+}
+
 header {
   padding: 0 165px;
   padding-top: 60px;
@@ -79,7 +83,7 @@ header {
 .navigation-list {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 35px;
 }
 
 .navigation-list div {
@@ -89,17 +93,63 @@ header {
   color: #ffffff;
 }
 
+.product-panel,
+.company-panel,
+.connect-panel {
+  width: 170px;
+  height: 0p;
+  background-color: #ffffff;
+  position: absolute;
+  top: 20%;
+  border-radius: 7px;
+  font-family: "Ubuntu", sans-serif;
+  transition: 0.3s ease;
+}
+
+.product-panel ul li,
+.company-panel ul li,
+.connect-panel ul li {
+  list-style-type: none;
+}
+
+.product-panel ul li:hover,
+.company-panel ul li:hover,
+.connect-panel ul li:hover {
+  font-weight: bold;
+}
+
+.product-panel ul,
+.company-panel ul,
+.connect-panel ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: 0.3s ease;
+}
+
+.product-panel {
+  left: 22%;
+}
+
+.company-panel {
+  left: 30%;
+}
+
+.connect-panel {
+  left: 39%;
+}
+
 .navigation-list div i {
   font-size: 10px;
 }
 
-.navigation-list div p{
-color: hsl(240, 2%, 79%);
-font-family: 'Ubuntu', sans-serif;
-font-weight: 700;
+.navigation-list div p {
+  color: hsl(240, 2%, 79%);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
 }
 
-.navigation-list div p:hover{
+.navigation-list div p:hover {
   color: #ffffff;
   text-decoration: underline;
 }
@@ -168,12 +218,13 @@ font-weight: 700;
   color: #ffffff;
 }
 
-#signup:hover, #start-for-free:hover{
+#signup:hover,
+#start-for-free:hover {
   background-color: hsl(355, 100%, 74%);
   color: #ffffff;
 }
 
-#learn-more:hover{
+#learn-more:hover {
   background-color: #ffffff;
   color: hsl(355, 100%, 74%);
 }
@@ -195,7 +246,7 @@ font-weight: 700;
   left: 56%;
 }
 
-.second-div > h1{
+.second-div > h1 {
   color: hsl(208, 49%, 24%);
   text-align: center;
   font-family: "Overpass", sans-serif;
@@ -204,7 +255,7 @@ font-weight: 700;
   margin-bottom: 120px;
 }
 
-.second-div-writeup{
+.second-div-writeup {
   margin-left: 165px;
   display: flex;
   flex-direction: column;
@@ -212,26 +263,30 @@ font-weight: 700;
   width: 530px;
 }
 
-.second-div-writeup div{
+.second-div-writeup-mobile{
+  display: none;
+}
+
+.second-div-writeup div {
   display: flex;
   flex-direction: column;
   gap: 35px;
 }
 
-.second-div-writeup h1{
+.second-div-writeup h1 {
   color: hsl(208, 49%, 24%);
   font-family: "Overpass", sans-serif;
   font-size: 30px;
 }
 
-.second-div-writeup p{
+.second-div-writeup p {
   color: hsl(207, 13%, 34%);
   font-family: "Overpass", sans-serif;
   line-height: 25px;
   font-size: 17px;
 }
 
-.third-div-background{
+.third-div-background {
   background-image: url(images/bg-pattern-circles.svg);
   width: 100%;
   height: 100%;
@@ -243,19 +298,19 @@ font-weight: 700;
   top: -55%;
 }
 
-.third-div{
+.third-div {
   position: relative;
   height: 880px;
   overflow: hidden;
 }
 
-.third-div-image{
+.third-div-image {
   position: absolute;
   z-index: 10;
   height: 500px;
 }
 
-.third-div-writeup{
+.third-div-writeup {
   margin-left: auto;
   overflow: hidden;
   padding: 110px 0;
@@ -269,7 +324,7 @@ font-weight: 700;
   border-top-right-radius: 90px;
 }
 
-.third-div-writeup h1{
+.third-div-writeup h1 {
   color: #ffffff;
   font-family: "Overpass", sans-serif;
   font-size: 40px;
@@ -280,7 +335,7 @@ font-weight: 700;
   /* padding-right: 165px; */
 }
 
-.third-div-writeup p{
+.third-div-writeup p {
   color: hsl(240, 2%, 79%);
   font-family: "Overpass", sans-serif;
   line-height: 25px;
@@ -289,7 +344,7 @@ font-weight: 700;
   margin-left: auto;
 }
 
-.third-div-image{
+.third-div-image {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -298,11 +353,11 @@ font-weight: 700;
   z-index: 100000;
 }
 
-.fourth-div{
+.fourth-div {
   margin-top: -365px;
 }
 
-.fourth-div-writeup-container{
+.fourth-div-writeup-container {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -310,74 +365,72 @@ font-weight: 700;
   gap: 125px;
 }
 
-.fourth-div-writeup{
+.fourth-div-writeup {
   display: flex;
   flex-direction: column;
   gap: 85px;
 }
 
-.fourth-div-writeup div{
+.fourth-div-writeup div {
   display: flex;
   flex-direction: column;
   gap: 35px;
   padding-right: 120px;
 }
 
-.fourth-div-writeup h1{
+.fourth-div-writeup h1 {
   color: hsl(208, 49%, 24%);
   font-family: "Overpass", sans-serif;
   font-size: 30px;
 }
 
-.fourth-div-writeup p{
+.fourth-div-writeup p {
   color: hsl(207, 13%, 34%);
   font-family: "Overpass", sans-serif;
   line-height: 25px;
 }
 
-footer{
+footer {
   background-color: hsl(240, 10%, 16%);
   display: flex;
   color: hsl(240, 2%, 79%);
   padding: 70px 165px;
   gap: 185px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   margin-top: 125px;
 }
 
-.footer-list{
+.footer-list {
   display: flex;
   gap: 210px;
 }
 
-.footer-list h1{
+.footer-list h1 {
   color: #ffffff;
   margin-bottom: 30px;
   font-weight: 500;
   font-size: 16px;
 }
 
-.footer-list h1:hover{
+.footer-list h1:hover {
   text-decoration: underline;
   color: red;
 }
 
-.footer-list ul{
+.footer-list ul {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.footer-list ul li{
+.footer-list ul li {
   list-style-type: none;
 }
 
-.footer-list ul:hover{
+.footer-list ul:hover {
   text-decoration: underline;
   color: red;
 }
-
-/* FINISHED THE WHOLE THING. TIME FOR MEDIA QUERIES */
 
 .one {
   background-color: hsl(356, 100%, 66%);
@@ -418,3 +471,145 @@ footer{
     hsl(237, 23%, 32%)
   );
 }
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* MEDIA QUERIES */
+/* FOR SCREENS 375px and BELOW */
+@media screen and (max-width: 375px) {
+  section {
+    width: 100%;
+  }
+
+  .hero {
+    background-image: linear-gradient(
+      to bottom,
+      hsl(13, 100%, 72%),
+      hsl(353, 100%, 62%)
+    );
+    border-bottom-left-radius: 90px;
+    overflow: hidden;
+    margin-bottom: 105px;
+  }
+
+   .hero-background {
+    background-size: 400%;
+    background-position-x: 36%;
+    background-position-y: 40%;
+  }
+
+  header {
+    padding: 0 25px;
+    padding-top: 55px;
+    margin-bottom: 115px;
+  }
+
+  .navigation-list {
+    display: none;
+  }
+
+  .right-header-container {
+    display: none;
+  }
+
+  .navigation-bar-div {
+    display: block;
+    color: #ffffff;
+    font-size: 30px;
+  }
+
+  .hero-writeup{
+    padding: 0 40px;
+  }
+
+  .hero-writeup h1{
+    font-size: 35px;
+  }
+
+  .hero-writeup p{
+    font-size: 16px;
+    color: hsl(240, 21%, 93%);
+  }
+
+  .second-div{
+
+  }
+
+  .second-div > h1{
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+  .second-div-background {
+ display: none;
+}
+
+.second-div-writeup{
+  display: none;
+}
+
+.second-div-writeup-mobile{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 55px;
+}
+
+.second-div-writeup-mobile-image{
+  width: 100%;
+}
+
+.second-div-writeup-mobile-image img{
+  width: 100%;
+}
+
+.second-div-writeup-mobile-container{
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  text-align: center;
+}
+
+.second-div-writeup-mobile-container div{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.second-div-writeup-mobile h1{
+  color: hsl(208, 49%, 24%);
+  font-family: "Overpass", sans-serif;
+  padding: 0 25px;
+  text-align: center;
+}
+
+.second-div-writeup-mobile p{
+  color: hsl(240, 1%, 56%);
+  font-family: "Overpass", sans-serif;
+  line-height: 25px;
+  padding: 0 10px;
+}
+} 
+
+/* MEDIA QUERIES: THIRD DIV */

@@ -49,18 +49,24 @@
           </div>
           <div class="navigation-list">
             <div>
-              <p>Product</p>
-              <i class="fa fa-chevron-down"></i>
+              <p id="open-product-panel">Product</p>
+              <p id="close-product-panel">Product</p>
+              <i id="open-product-panel-icon" class="fa fa-chevron-down"></i>
+              <i id="close-product-panel-icon" class="fa fa-chevron-up"></i>
               <!-- <i class="fa-solid fa-chevron-down"></i> -->
             </div>
             <div>
-              <p>Company</p>
-              <i class="fa fa-chevron-down"></i>
+              <p id="open-company-panel">Company</p>
+              <p id="close-company-panel">Company</p>
+              <i id="open-company-panel-icon" class="fa fa-chevron-down"></i>
+              <i id="close-company-panel-icon" class="fa fa-chevron-up"></i>
               <!-- <i class="fa-solid fa-chevron-down"></i> -->
             </div>
             <div>
-              <p>Connect</p>
-              <i class="fa fa-chevron-down"></i>
+              <p id="open-connect-panel">Connect</p>
+              <p id="close-connect-panel">Connect</p>
+              <i id="open-connect-panel-icon" class="fa fa-chevron-down"></i>
+              <i id="close-connect-panel-icon" class="fa fa-chevron-up"></i>
               <!-- <i class="fa-solid fa-chevron-down"></i> -->
             </div>
           </div>
@@ -70,7 +76,34 @@
           <button id="login">Login</button>
           <button id="signup">Sign Up</button>
         </div>
+        <div class="navigation-bar-div">
+          <i class="fa fa-bars"></i>
+        </div>
       </header>
+
+      <div id="product-panel" class="product-panel">
+        <ul id="product-panel-list">
+          <li>Pricing</li>
+          <li>Marketplace</li>
+          <li>Features</li>
+          <li>Integrations</li>
+        </ul>
+      </div>
+      <div id="company-panel" class="company-panel">
+        <ul id="company-panel-list">
+          <li>About</li>
+          <li>Team</li>
+          <li>Blog</li>
+          <li>Careers</li>
+        </ul>
+      </div>
+      <div id="connect-panel" class="connect-panel">
+        <ul id="connect-panel-list">
+          <li>Contact</li>
+          <li>Newsletter</li>
+          <li>LinkedIn</li>
+        </ul>
+      </div>
       <div class="hero-writeup">
         <h1>A modern publishing platform</h1>
         <p>Grow your audience and build your online brand</p>
@@ -101,6 +134,29 @@
           <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog
             by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
           </p>
+        </div>
+      </div>
+
+      <div class="second-div-writeup-mobile">
+        <div class="second-div-writeup-mobile-image">
+          <img src="images/illustration-editor-mobile.svg" alt="">
+        </div>
+        <div class="second-div-writeup-mobile-container">
+          <div>
+            <h1>Introducing an extensible editor</h1>
+            <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
+              The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
+              videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
+              change the looks of a blog.</p>
+          </div>
+          <div>
+            <h1>Robust content management</h1>
+            <p>Flexible content management enables users to easily move through posts. Increase the usability of your
+              blog
+              by adding customized categories, sections, format, or flow. With this functionality, you’re in full
+              control.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -186,26 +242,6 @@
     </footer>
   </section>
 
-
-  <!-- Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-
-
-  About
-  Team
-  Blog
-  Careers
-
-
-
-  Contact
-  Newsletter
-  LinkedIn -->
-
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
@@ -221,6 +257,8 @@
     <div class="seven"></div>
     <div class="eight"></div>
   </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
