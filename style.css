@@ -507,9 +507,6 @@ footer {
     color: hsl(240, 21%, 93%);
   }
 
-  .second-div {
-  }
-
   .second-div > h1 {
     font-size: 30px;
     margin-bottom: 50px;
@@ -2109,4 +2106,68 @@ footer {
   }
 }
 
-/* MEDIA QUERIES: 916 TO 990 */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* FOR SCREENS FROM 916px TO 990px */
+
+@media screen and (min-width: 916px) and (max-width: 990px) {
+  section {
+    width: 915px;
+  }
+
+  .hero {
+    background-image: linear-gradient(
+      to bottom,
+      hsl(13, 100%, 72%),
+      hsl(353, 100%, 62%)
+    );
+    border-bottom-left-radius: 90px;
+    overflow: hidden;
+    margin-bottom: 105px;
+  }
+
+  .hero-background {
+    background-size: 300%;
+    background-position-x: 36%;
+    background-position-y: 40%;
+  }
+
+  header {
+    padding: 0 25px;
+    padding-top: 55px;
+    margin-bottom: 115px;
+  }
+
+  .hero-writeup {
+    padding: 0 40px;
+  }
+
+  .hero-writeup h1 {
+    font-size: 35px;
+  }
+
+  .hero-writeup p {
+    font-size: 16px;
+    color: hsl(240, 21%, 93%);
+  }
+}
+
+/* MEDIA QUERIES: 916 TO 990 copy from second div */
