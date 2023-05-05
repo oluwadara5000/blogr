@@ -19,7 +19,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-  <!-- <script src="https://kit.fontawesome.com/1d29cd001d.js" crossorigin="anonymous"></script> -->
 
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 
@@ -28,18 +27,72 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution {
-      font-size: 11px;
+      font-size: 20px;
       text-align: center;
+      color: #ffffff;
     }
 
     .attribution a {
-      color: hsl(228, 45%, 44%);
+       color: hsl(355, 100%, 74%);
+       text-decoration: none;
     }
   </style>
 </head>
 
 <body>
   <section>
+    <div id="panel" class="panel">
+      <div id="mobile-panel-container" class="mobile-panel-container">
+        <div class="mobile-panel-div">
+          <div>
+            <p id="open-product-mobile-panel">Product</p>
+            <p id="close-product-mobile-panel">Product</p>
+            <i id="open-product-mobile-panel-icon" class="fa fa-chevron-down"></i>
+            <i id="close-product-mobile-panel-icon" class="fa fa-chevron-up"></i>
+          </div>
+          <ul id="product-mobile-panel-list">
+            <li>Pricing</li>
+            <li>Marketplace</li>
+            <li>Features</li>
+            <li>Integrations</li>
+          </ul>
+        </div>
+    
+        <div class="mobile-panel-div">
+          <div>
+            <p id="open-company-mobile-panel">Company</p>
+            <p id="close-company-mobile-panel">Company</p>
+            <i id="open-company-mobile-panel-icon" class="fa fa-chevron-down"></i>
+            <i id="close-company-mobile-panel-icon" class="fa fa-chevron-up"></i>
+          </div>
+          <ul id="company-mobile-panel-list">
+            <li>About</li>
+            <li>Team</li>
+            <li>Blog</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+    
+        <div class="mobile-panel-div">
+          <div>
+            <p id="open-connect-mobile-panel">Connect</p>
+            <p id="close-connect-mobile-panel">Connect</p>
+            <i id="open-connect-mobile-panel-icon" class="fa fa-chevron-down"></i>
+            <i id="close-connect-mobile-panel-icon" class="fa fa-chevron-up"></i>
+          </div>
+          <ul id="connect-mobile-panel-list">
+            <li>Contact</li>
+            <li>Newsletter</li>
+            <li>LinkedIn</li>
+          </ul>
+        </div>
+      </div>
+    
+      <div id="mobile-panel-buttons" class="mobile-panel-buttons">
+        <button id="mobile-panel-login">Login</button>
+        <button id="mobile-panel-signup">Sign Up</button>
+      </div>
+    </div>
     <div class="hero">
       <div class="hero-background"></div>
       <header>
@@ -53,21 +106,21 @@
               <p id="close-product-panel">Product</p>
               <i id="open-product-panel-icon" class="fa fa-chevron-down"></i>
               <i id="close-product-panel-icon" class="fa fa-chevron-up"></i>
-              <!-- <i class="fa-solid fa-chevron-down"></i> -->
+              
             </div>
             <div>
               <p id="open-company-panel">Company</p>
               <p id="close-company-panel">Company</p>
               <i id="open-company-panel-icon" class="fa fa-chevron-down"></i>
               <i id="close-company-panel-icon" class="fa fa-chevron-up"></i>
-              <!-- <i class="fa-solid fa-chevron-down"></i> -->
+              
             </div>
             <div>
               <p id="open-connect-panel">Connect</p>
               <p id="close-connect-panel">Connect</p>
               <i id="open-connect-panel-icon" class="fa fa-chevron-down"></i>
               <i id="close-connect-panel-icon" class="fa fa-chevron-up"></i>
-              <!-- <i class="fa-solid fa-chevron-down"></i> -->
+              
             </div>
           </div>
         </div>
@@ -77,7 +130,8 @@
           <button id="signup">Sign Up</button>
         </div>
         <div class="navigation-bar-div">
-          <i class="fa fa-bars"></i>
+          <i id="open" class="fa fa-bars"></i>
+          <i id="close" class="fa fa-close"></i>
         </div>
       </header>
 
@@ -245,7 +299,7 @@
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/oluwadara5000">Odejobi Oluwadara</a>.
   </div>
 
   <script src="script.js"></script>
